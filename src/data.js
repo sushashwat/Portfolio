@@ -41,10 +41,10 @@ export const certifications = [
     subtitle: "Training — Certificate of Completion",
     file: "/assets/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf",
   },
-  {
-    title: "Frontend Web Development",
-    subtitle: "Certification",
-    file: "/assets/Frontend_Web_Development_Certificate.png",
+ {
+    title: "Frontend Developer (React)",
+    subtitle: "HackerRank Certification",
+    file: "/assets/HackerRank_React_Certificate.png",
   },
 ];
 
