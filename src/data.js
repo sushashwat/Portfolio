@@ -39,7 +39,7 @@ export const certifications = [
  {
     title: "Frontend Developer (React)",
     subtitle: "HackerRank Certification",
-    file: "public/assets/HackerRank_React_Certificate.png",
+    file: "/assets/HackerRank_React_Certificate.png",
   },
 ];
 
