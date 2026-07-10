@@ -36,11 +36,6 @@ export const projects = [
 ];
 
 export const certifications = [
-  {
-    title: "Full Stack Web Development",
-    subtitle: "Training — Certificate of Completion",
-    file: "/assets/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf",
-  },
  {
     title: "Frontend Developer (React)",
     subtitle: "HackerRank Certification",
