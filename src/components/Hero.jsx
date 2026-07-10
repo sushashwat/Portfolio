@@ -137,7 +137,6 @@ export default function Hero() {
                 <span className="tok-punc">{"};"}</span>
               </p>
               <p className="term-line result-line">
-                <span className="tok-comment">// placement drive — July 2026</span>
               </p>
             </div>
           </div>
