@@ -17,6 +17,15 @@ export const skillGroups = [
 ];
 
 export const projects = [
+
+  {
+    name: "Boardroom",
+    description: "A real-time collaborative Kanban board with drag-and-drop task management, live multi-user sync, and role-based access control. eal-time sync across boards using Socket.io with board-scoped rooms.",
+    tech: ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Socket.io", "JWT"],  
+    live: "https://kanban-plum-rho.vercel.app/dashboard",
+    github: "https://github.com/sushashwat/Kanban",
+  },
+  
   {
     name: "YouTube Clone",
     description:
@@ -33,10 +42,11 @@ export const projects = [
     live: "https://shoppy-globe-amber.vercel.app/",
     github: "https://github.com/sushashwat/Shoppy-Globe",
   },
+
 ];
 
 export const certifications = [
- {
+  {
     title: "Frontend Developer (React)",
     subtitle: "HackerRank Certification",
     file: "/assets/HackerRank_React_Certificate.png",
