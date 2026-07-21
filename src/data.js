@@ -47,9 +47,19 @@ export const projects = [
 
 export const certifications = [
   {
+    title: "N.S.D.C",
+    subtitle: "Skill India Certificate",
+    file: "/assets/Certificate_CAN_Course.jpg",
+  },
+  {
     title: "Frontend Developer (React)",
     subtitle: "HackerRank Certification",
     file: "/assets/HackerRank_React_Certificate.png",
+  },
+  {
+    title: "Full Stack Developer",
+    subtitle:"Internshala Certificate",
+    file:"/assets/Certificate_Placement_Course.jpg",
   },
 ];
 

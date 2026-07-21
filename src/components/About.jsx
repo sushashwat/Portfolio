@@ -1,6 +1,6 @@
 import useReveal from '../hooks/useReveal'
 const stats = [
-  { num: "2", label: "Deployed full-stack apps" },
+  { num: "3", label: "Deployed full-stack apps" },
   { num: "2", label: "Web dev certifications" },
   { num: "MERN", label: "Primary stack" },
   { num: "DSA", label: "Currently sharpening" },
