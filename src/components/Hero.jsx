@@ -24,8 +24,9 @@ export default function Hero() {
               <i className="fa-solid fa-diagram-project"></i> View Projects
             </a>
             <a
-              href="/assets/ShashwatGupta_InternshalaResume.pdf"
-              download
+              href="/assets/Shashwat_Gupta_Resume_.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-ghost"
             >
               <i className="fa-solid fa-download"></i> Resume
@@ -121,11 +122,11 @@ export default function Hero() {
               <p className="code-line indent">
                 <span className="tok-key">deployed</span>
                 <span className="tok-punc">:</span>{" "}
-                <span className="tok-num">2</span>
+                <span className="tok-num">5</span>
                 <span className="tok-punc">,</span>{" "}
                 <span className="tok-key">learning</span>
                 <span className="tok-punc">:</span>{" "}
-                <span className="tok-str">"DSA"</span>
+                <span className="tok-str">"Technologies"</span>
                 <span className="tok-punc">,</span>
               </p>
               <p className="code-line indent">
