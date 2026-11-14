@@ -71,7 +71,7 @@ export const projects = [
     description:
       "An n8n workflow that ranks top HackerNews stories, filters them by a points threshold, and alerts Discord via webhook. Also includes a QA report with 11 issues found on a live demo app.",
     tech: ["n8n", "REST APIs", "Webhooks", "Lighthouse", "QA"],
-    github: "https://github.com/sushashwat/automation-qa-assessment",
+    github: "https://github.com/sushashwat/automation-qa-assesment-",
   },
   {
     name: "YouTube Clone",
