@@ -10,45 +10,52 @@ export default function Projects() {
       <h2>Things I've shipped</h2>
 
       <div className="projects-container">
-        {projects.map((p) => (
-          <article className="project-card" key={p.name}>
-            <div className="project-top">
-              <span className="branch-tag">
-                <i className="fa-solid fa-code-branch"></i> main
-              </span>
-              <span className="status-badge status-live">
-                <span className="status-dot"></span> deployed
-              </span>
-            </div>
-            <h3>{p.name}</h3>
-            <p>{p.description}</p>
-            <div className="tech-row">
-              {p.tech.map((t) => (
-                <span className="tech-pill" key={t}>
-                  {t}
+        {projects.map((p) => {
+          const status = p.status || "deployed";
+          return (
+            <article className="project-card" key={p.name}>
+              <div className="project-top">
+                <span className="branch-tag">
+                  <i className="fa-solid fa-code-branch"></i> main
                 </span>
-              ))}
-            </div>
-            <div className="project-links">
-              <a
-                href={p.live}
-                target="_blank"
-                rel="noopener"
-                className="btn btn-primary btn-sm"
-              >
-                <i className="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-              </a>
-              <a
-                href={p.github}
-                target="_blank"
-                rel="noopener"
-                className="btn btn-ghost btn-sm"
-              >
-                <i className="fa-brands fa-github"></i> Source
-              </a>
-            </div>
-          </article>
-        ))}
+                <span
+                  className={`status-badge ${status === "deployed" ? "status-live" : ""}`}
+                >
+                  <span className="status-dot"></span> {status}
+                </span>
+              </div>
+              <h3>{p.name}</h3>
+              <p>{p.description}</p>
+              <div className="tech-row">
+                {p.tech.map((t) => (
+                  <span className="tech-pill" key={t}>
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="project-links">
+                {p.live && (
+                  <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noopener"
+                    className="btn btn-primary btn-sm"
+                  >
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                )}
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener"
+                  className="btn btn-ghost btn-sm"
+                >
+                  <i className="fa-brands fa-github"></i> Source
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
 
       <div className="more-projects">

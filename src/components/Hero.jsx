@@ -1,7 +1,10 @@
 import useTypewriter from "../hooks/useTypewriter";
+import { projects } from "../data";
+
 
 export default function Hero() {
   const boot = useTypewriter("$ whoami", 55, 400);
+  const deployedCount = projects.filter((p) => p.live).length;
 
   return (
     <section id="home">
@@ -105,6 +108,8 @@ export default function Hero() {
                 <span className="tok-punc">:</span>{" "}
                 <span className="tok-str">"Full-Stack MERN Developer"</span>
                 <span className="tok-punc">,</span>
+                <span className="tok-str">"Next.js"</span>
+                <span className="tok-punc">],</span>
               </p>
               <p className="code-line indent">
                 <span className="tok-key">stack</span>
@@ -122,11 +127,11 @@ export default function Hero() {
               <p className="code-line indent">
                 <span className="tok-key">deployed</span>
                 <span className="tok-punc">:</span>{" "}
-                <span className="tok-num">5</span>
+                <span className="tok-num">{deployedCount}</span>
                 <span className="tok-punc">,</span>{" "}
                 <span className="tok-key">learning</span>
                 <span className="tok-punc">:</span>{" "}
-                <span className="tok-str">"Technologies"</span>
+                <span className="tok-str">"DSA"</span>
                 <span className="tok-punc">,</span>
               </p>
               <p className="code-line indent">

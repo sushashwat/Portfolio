@@ -1,14 +1,16 @@
 import useReveal from '../hooks/useReveal'
-const stats = [
-  { num: "3", label: "Deployed full-stack apps" },
-  { num: "2", label: "Web dev certifications" },
-  { num: "MERN", label: "Primary stack" },
-  { num: "DSA", label: "Currently sharpening" },
+import { projects, certifications } from "../data";
+const stats = [{ num: String(projects.filter((p) => p.live).length), label: "Deployed full-stack apps" },
+{ num: String(certifications.length), label: "Web dev certifications" },
+{ num: "MERN", label: "Primary stack" },
+{ num: "DSA", label: "Currently sharpening" },
 ];
 
 export default function About() {
-    const[ref, inView] = useReveal();
-    
+  const [ref, inView] = useReveal();
+  const deployedCount = projects.filter((p) => p.live).length;
+  const certCount = certifications.length;
+
   return (
     <section id="about" ref={ref} className={`reveal ${inView ? "in-view" : ""}`}>
       <p className="eyebrow center">// 01 — about</p>
